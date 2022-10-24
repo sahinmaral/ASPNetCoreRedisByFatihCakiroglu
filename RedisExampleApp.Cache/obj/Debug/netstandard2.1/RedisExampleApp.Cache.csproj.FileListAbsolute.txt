@@ -1,0 +1,10 @@
+C:\Users\sahin\OneDrive\Desktop\Files\GithubRepositories\ASPNetCoreRedisInMemoryByFatihCakiroglu\RedisExampleApp.Cache\bin\Debug\netstandard2.1\RedisExampleApp.Cache.deps.json
+C:\Users\sahin\OneDrive\Desktop\Files\GithubRepositories\ASPNetCoreRedisInMemoryByFatihCakiroglu\RedisExampleApp.Cache\bin\Debug\netstandard2.1\RedisExampleApp.Cache.dll
+C:\Users\sahin\OneDrive\Desktop\Files\GithubRepositories\ASPNetCoreRedisInMemoryByFatihCakiroglu\RedisExampleApp.Cache\bin\Debug\netstandard2.1\RedisExampleApp.Cache.pdb
+C:\Users\sahin\OneDrive\Desktop\Files\GithubRepositories\ASPNetCoreRedisInMemoryByFatihCakiroglu\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.csproj.AssemblyReference.cache
+C:\Users\sahin\OneDrive\Desktop\Files\GithubRepositories\ASPNetCoreRedisInMemoryByFatihCakiroglu\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sahin\OneDrive\Desktop\Files\GithubRepositories\ASPNetCoreRedisInMemoryByFatihCakiroglu\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.AssemblyInfoInputs.cache
+C:\Users\sahin\OneDrive\Desktop\Files\GithubRepositories\ASPNetCoreRedisInMemoryByFatihCakiroglu\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.AssemblyInfo.cs
+C:\Users\sahin\OneDrive\Desktop\Files\GithubRepositories\ASPNetCoreRedisInMemoryByFatihCakiroglu\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.csproj.CoreCompileInputs.cache
+C:\Users\sahin\OneDrive\Desktop\Files\GithubRepositories\ASPNetCoreRedisInMemoryByFatihCakiroglu\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.dll
+C:\Users\sahin\OneDrive\Desktop\Files\GithubRepositories\ASPNetCoreRedisInMemoryByFatihCakiroglu\RedisExampleApp.Cache\obj\Debug\netstandard2.1\RedisExampleApp.Cache.pdb

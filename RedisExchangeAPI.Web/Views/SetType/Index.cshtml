@@ -1,0 +1,40 @@
+﻿@using RedisExchangeAPI.Web.Controllers
+@model HashSet<string>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form method="post"
+      asp-action="@nameof(SetTypeController.AddAsync).Replace("Async","")"
+      asp-controller="@nameof(SetTypeController).Replace("Controller","")"
+      enctype="application/x-www-form-urlencoded">
+
+    <input type="text" name="colour" />
+    <button type="submit">Kaydet</button>
+
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Colour</th>
+            <th scope="col">Delete Item</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (string colour in Model)
+        {
+            <tr>
+                <th scope="row">@colour</th>
+                <th scope="row">
+                    <a class="btn btn-danger"
+                   asp-action="@nameof(SetTypeController.DeleteItemAsync).Replace("Async","")"
+                   asp-route-colour="@colour"
+                   asp-controller="@nameof(SetTypeController).Replace("Controller","")">Delete Item</a>
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>
+

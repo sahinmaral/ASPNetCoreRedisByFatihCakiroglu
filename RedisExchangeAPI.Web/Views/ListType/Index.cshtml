@@ -1,0 +1,54 @@
+﻿@using RedisExchangeAPI.Web.Controllers
+@model List<string>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form method="post" 
+    asp-action="@nameof(ListTypeController.AddAsync).Replace("Async","")"
+    asp-controller="@nameof(ListTypeController).Replace("Controller","")"
+    enctype="application/x-www-form-urlencoded"
+>
+
+<input type="text" name="name" />
+<button type="submit">Kaydet</button>
+
+</form>
+
+<br/>
+
+<a class="btn btn-success"
+   asp-action="@nameof(ListTypeController.DeleteFirstItemAsync).Replace("Async","")"
+   asp-controller="@nameof(ListTypeController).Replace("Controller","")">Delete First Item</a>
+
+<a class="btn btn-success"
+   asp-action="@nameof(ListTypeController.DeleteLastItemAsync).Replace("Async","")"
+   asp-controller="@nameof(ListTypeController).Replace("Controller","")">Delete Last Item</a>
+
+<br/>
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Delete Item</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (string name in Model)
+        {
+            <tr>
+                <th scope="row">@name</th>
+                <th scope="row">
+                    <a class="btn btn-danger"
+                   asp-action="@nameof(ListTypeController.DeleteItemAsync).Replace("Async","")"
+                   asp-route-name="@name"
+                   asp-controller="@nameof(ListTypeController).Replace("Controller","")">Delete Item</a>
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>
+

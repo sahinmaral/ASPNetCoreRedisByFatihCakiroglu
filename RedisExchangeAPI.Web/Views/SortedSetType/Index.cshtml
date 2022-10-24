@@ -1,0 +1,46 @@
+﻿@using RedisExchangeAPI.Web.Controllers
+
+@model SortedSet<string>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form method="post"
+      asp-action="@nameof(SortedSetTypeController.AddAsync).Replace("Async","")"
+      asp-controller="@nameof(SortedSetTypeController).Replace("Controller","")"
+      enctype="application/x-www-form-urlencoded">
+
+    <label>Car</label>
+    <input class="form-control" type="text" name="car" />
+
+    <label>Score</label>
+    <input class="form-control" type="text" name="score" />
+
+    <button type="submit" class="btn btn-success">Kaydet</button>
+
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Car</th>
+            <th scope="col">Delete Item</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (string car in Model)
+        {
+            <tr>
+                <th scope="row">@car</th>
+                <th scope="row">
+                    <a class="btn btn-danger"
+                   asp-action="@nameof(SortedSetTypeController.DeleteItemAsync).Replace("Async","")"
+                   asp-route-car="@car"
+                   asp-controller="@nameof(SortedSetTypeController).Replace("Controller","")">Delete Item</a>
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>
+

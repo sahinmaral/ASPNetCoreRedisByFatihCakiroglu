@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Show";
+
+    Product product1 = ViewBag.Product1 as Product;
+    Product product2 = ViewBag.Product2 as Product;
+}
+
+<h1>@ViewBag.Time</h1>
+
+<p>
+    <h3>Product1</h3>
+    <p>Product Id = @product1.Id</p>
+    <p>Product Name = @product1.Name</p>
+    <p>Product Price = @product1.Price</p>
+</p>
+
+<p>
+    <h3>Product2</h3>
+    <p>Product Id = @product2.Id</p>
+    <p>Product Name = @product2.Name</p>
+    <p>Product Price = @product2.Price</p>
+</p>
+
+
